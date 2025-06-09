@@ -1,0 +1,54 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.block-palette {
+    min-width: 200px;
+    background-color: #ffffff;
+}
+
+.flow-area {
+    background-color: #f9fafb;
+    border: 2px dashed #cbd5e1;
+    min-height: 600px;
+    position: relative;
+}
+
+.flow-block {
+    cursor: grab;
+    position: absolute;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 150px;
+}
+
+#connectionCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.flow-block textarea {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border: 1px solid #a0aec0;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    resize: vertical, horizontal;
+    width: calc(100% - 16px);
+    min-height: 50px;
+    font-size: 0.875rem;
+}
+
+#manageFlowsModal {
+    z-index: 1000;
+}
